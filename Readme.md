@@ -5,9 +5,6 @@
 <!-- default file list end -->
 # How to create a 3D Pie chart
 
+The following example demonstrates how to create a [3D Pie](https://docs.devexpress.com/WindowsForms/2963/controls-and-libraries/chart-control/series-views/3d-series-views/pie-and-donut-series-views/pie-chart?p=netframework) chart at runtime.
 
-<p>The following example demonstrates how to create a <a href="http://devexpress.com/Help/Content.aspx?help=XtraCharts&document=CustomDocument2963.htm">3D Pie</a> chart at runtime.</p><p>Note that this series view type is associated with the <a href="http://devexpress.com/Help/Content.aspx?help=XtraCharts&document=CustomDocument5911.htm">Simple Diagram 3D</a> type, and you should cast your <a href="http://devexpress.com/Help/Content.aspx?help=XtraCharts&document=CustomDocument6017.htm">diagram</a> object to this type, in order to access its specific options.</p>
-
-<br/>
-
-
+Note that this series view type is associated with the [Simple Diagram 3D](https://docs.devexpress.com/WindowsForms/5911/controls-and-libraries/chart-control/diagram/simple-diagram-3d?p=netframework) type, and you should cast your [diagram](https://docs.devexpress.com/WindowsForms/5778/controls-and-libraries/chart-control/diagram?p=netframework) object to this type, in order to access its specific options.
