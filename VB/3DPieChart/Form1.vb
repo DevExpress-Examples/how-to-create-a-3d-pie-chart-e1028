@@ -1,23 +1,22 @@
-﻿Imports System
+Imports System
 Imports System.Windows.Forms
 Imports DevExpress.XtraCharts
-' ...
 
+' ...
 Namespace _DPieChart
-    Partial Public Class Form1
+
+    Public Partial Class Form1
         Inherits Form
 
         Public Sub New()
             InitializeComponent()
         End Sub
 
-        Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+        Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
             ' Create an empty chart.
-            Dim PieChart3D As New ChartControl()
-
+            Dim PieChart3D As ChartControl = New ChartControl()
             ' Create a pie series.
-            Dim series1 As New Series("Pie Series 1", ViewType.Pie3D)
-
+            Dim series1 As Series = New Series("Pie Series 1", ViewType.Pie3D)
             ' Populate the series with points.
             series1.Points.Add(New SeriesPoint("Russia", 17.0752))
             series1.Points.Add(New SeriesPoint("Canada", 9.98467))
@@ -27,32 +26,25 @@ Namespace _DPieChart
             series1.Points.Add(New SeriesPoint("Australia", 7.68685))
             series1.Points.Add(New SeriesPoint("India", 3.28759))
             series1.Points.Add(New SeriesPoint("Others", 81.2))
-
             ' Add the series to the chart.
             PieChart3D.Series.Add(series1)
-
             ' Adjust the value numeric options of the series.
             series1.Label.TextPattern = "{VP:p0}"
-
             ' Adjust the view-type-specific options of the series.
             CType(series1.View, Pie3DSeriesView).Depth = 30
             CType(series1.View, Pie3DSeriesView).ExplodedPoints.Add(series1.Points(0))
             CType(series1.View, Pie3DSeriesView).ExplodedDistancePercentage = 30
-
             ' Access the diagram's options.
             CType(PieChart3D.Diagram, SimpleDiagram3D).RotationType = RotationType.UseAngles
             CType(PieChart3D.Diagram, SimpleDiagram3D).RotationAngleX = -35
-
             ' Add a title to the chart and hide the legend.
-            Dim chartTitle1 As New ChartTitle()
+            Dim chartTitle1 As ChartTitle = New ChartTitle()
             chartTitle1.Text = "3D Pie Chart"
             PieChart3D.Titles.Add(chartTitle1)
             PieChart3D.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False
-
             ' Add the chart to the form.
             PieChart3D.Dock = DockStyle.Fill
             Me.Controls.Add(PieChart3D)
         End Sub
-
     End Class
 End Namespace
