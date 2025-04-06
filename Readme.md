@@ -5,7 +5,7 @@
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
 
-# How to create a 3D Pie chart
+# Chart for WinForms - Create a 3D Pie Chart
 
 The following example creates a [3D Pie](https://docs.devexpress.com/WindowsForms/2963/controls-and-libraries/chart-control/series-views/3d-series-views/pie-and-donut-series-views/pie-chart?p=netframework) chart at runtime.
 
