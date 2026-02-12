@@ -23,7 +23,7 @@ Note that this series view type is associated with the [Simple Diagram 3D](https
 
 * [Pie Chart](https://docs.devexpress.com/WindowsForms/2963/controls-and-libraries/chart-control/series-views/3d-series-views/pie-and-donut-series-views/pie-chart)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-chart-create-a-3d-pie-chart&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-chart-create-a-3d-pie-chart&~~~was_helpful=no)
 
